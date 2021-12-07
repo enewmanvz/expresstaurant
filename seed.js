@@ -9,13 +9,13 @@ const {Item} = require('./models/Item')
 const seedRestaurant = [
   {
     name: 'AppleBees',
-    location: 'Texas',
-    cuisine: 'FastFood'
+    location: 'Dallas',
+    cuisine: 'America Bistro'
   },
   {
-    name: 'LittleSheep',
+    name: 'LaMadeleine',
     location: 'Dallas',
-    cuisine: 'Hotpot'
+    cuisine: 'French'
   },
   {
     name: 'Spice Grill',
@@ -23,14 +23,14 @@ const seedRestaurant = [
     cuisine: 'Indian'
   },
   {
-    name: 'burgetking',
-    location: 'Dallas',
-    cuisine: 'Hotpot'
+    name: 'Burget King',
+    location: 'Cedar Hill',
+    cuisine: 'American'
   },
   {
-    name: 'MCDS',
-    location: 'Dallas',
-    cuisine: 'Hotpot'
+    name: 'McDowells',
+    location: 'New York',
+    cuisine: 'American'
   },
 ]
 
@@ -51,6 +51,13 @@ const seedMenu = [
 
 const seedItem = [
   {
+    name: 'Crossant Sandwhich',
+    image: 'someimage.jpg',
+    price: 9.50,
+    vegetarian: false,
+    MenuId : 4,
+  },  
+  {
     name: 'bhindi masala',
     image: 'someimage.jpg',
     price: 9.50,
@@ -58,14 +65,14 @@ const seedItem = [
     MenuId : 3,
   },
   {
-    name: 'egusi soup',
+    name: 'Chicken Pesto Pasta',
     image: 'someimage.jpg',
     price: 10.50,
     vegetarian: false,
     MenuId : 2,
   },
   {
-    name: 'hamburger',
+    name: 'Hamburger',
     image: 'someimage.jpg',
     price: 6.50,
     vegetarian: false,

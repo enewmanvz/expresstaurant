@@ -23,6 +23,7 @@ app.get('/flipcoin', (req, res) => {
 
 //GET method on /restaurants route returns all restaurants
 app.get('/restaurants', async (req,res) => {
+    console.log(req)
     //find all instances of the Model Restaurant
     const allRestaurants = await Restaurant.findAll()
     //respond with allRestaurants as a json objeect
