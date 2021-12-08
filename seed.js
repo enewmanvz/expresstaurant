@@ -8,9 +8,9 @@ const {Item} = require('./models/Item')
 //Q: What do you think will happen when we 'seed' this file?
 const seedRestaurant = [
   {
-    name: 'AppleBees',
-    location: 'Dallas',
-    cuisine: 'America Bistro'
+    name: 'McDowells',
+    location: 'New York',
+    cuisine: 'American'
   },
   {
     name: 'LaMadeleine',
@@ -23,59 +23,83 @@ const seedRestaurant = [
     cuisine: 'Indian'
   },
   {
-    name: 'Burget King',
+    name: 'Burger King',
     location: 'Cedar Hill',
     cuisine: 'American'
   },
   {
-    name: 'McDowells',
-    location: 'New York',
+    name: 'Apple Bees',
+    location: 'Cedar Hill',
     cuisine: 'American'
   },
 ]
 
 const seedMenu = [
   {
-    title: 'Breakfast',
+    name: 'Breakfast',
+    entree: 'All Day Breakfast',
     RestaurantId : 1,
   },
   {
-    title: 'Lunch',
+    name: 'Lunch',
+    entree: 'Lunch Classics',
     RestaurantId : 2,
   },
   {
-    title: 'Dinner',
+    name: 'Dinner',
+    entree:'Dinner Favorites',
     RestaurantId : 3,
   },
 ]
 
 const seedItem = [
   {
+    name: 'Chocolate Croissant',
+    image: 'someimage.jpg',
+    price: 3.99,
+    calories: 100,
+    MenuId : 7,
+  },
+  {
+    name: 'Big McDowell Meal',
+    image: 'someimage.jpg',
+    price: 7.99,
+    calories: 1080,
+    MenuId : 6,
+  },
+  {
+    name: 'Chicken Cobb Salad',
+    image: 'someimage.jpg',
+    price: 9.50,
+    calories: 950,
+    MenuId : 5,
+  },
+  {
     name: 'Crossant Sandwhich',
     image: 'someimage.jpg',
     price: 9.50,
-    vegetarian: false,
+    calories: 840,
     MenuId : 4,
   },  
   {
-    name: 'bhindi masala',
+    name: 'Chicken Tikka Masala',
     image: 'someimage.jpg',
     price: 9.50,
-    vegetarian: true,
+    calories: 1249,
     MenuId : 3,
   },
   {
     name: 'Chicken Pesto Pasta',
     image: 'someimage.jpg',
     price: 10.50,
-    vegetarian: false,
+    calories: 985,
     MenuId : 2,
   },
   {
-    name: 'Hamburger',
+    name: 'Spicy ChicKing Sandwich',
     image: 'someimage.jpg',
     price: 6.50,
-    vegetarian: false,
+    calories: false,
     MenuId : 1,
   }
 ]
